@@ -57,4 +57,5 @@ info_df = pd.DataFrame({
     'Porcentaje nulos (%)': round(datos.isnull().mean() * 100, 2)
 })
 
-info_df
+print(info_df)
+print(datos.head(10))
