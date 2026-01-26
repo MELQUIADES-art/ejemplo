@@ -46,7 +46,6 @@ La diputación de Valladolid nos ha proporcionado cortésmente datos sobre el n�
 """
 
 
-!pip install pyod
 
 # Librerías
 import pandas as pd
@@ -57,10 +56,6 @@ import matplotlib.pyplot as plt
 from pandas.plotting import scatter_matrix
 from scipy import stats
 from sklearn.preprocessing import RobustScaler, MinMaxScaler
-!pip install seaborn
-!pip install mpl_toolkits
-!pip install scipy
-!pip install plotly
 import seaborn as sns
 from matplotlib.patches import Patch
 from mpl_toolkits.mplot3d import Axes3D
