@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 from pandas.plotting import scatter_matrix
 from scipy import stats
 from sklearn.preprocessing import RobustScaler, MinMaxScaler
-datos=pd.read_excel("datos.xlsx")
+datos=pd.read_excel(r"C:\Users\MELQUIADES\Desktop\datos.xlsx")
 datos["Extensión"]=np.array(datos["Extensión"],dtype='str')
 datos["año"]=np.array(datos["año"],dtype='str')
 def funcionTiempo(x):
