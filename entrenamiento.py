@@ -5,7 +5,7 @@ for i in range(3):
 import numpy as np
 import matplotlib.pyplot as plt
 x=np.linspace(-1,1,1000)
-y=np.log(x)
+y=np.log(np.abs(x))
 z=np.sqrt(np.abs(x)+1)
 plt.plot(x,y,'r')
 plt.plot(x,z,'g')
