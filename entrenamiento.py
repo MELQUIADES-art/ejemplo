@@ -6,6 +6,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 x=np.linspace(-1,1,1000)
 y=np.log(x)
-z=sqrt(x)
+z=sqrt(abs(x))
 plt.plot(x,y,'r')
 plt(x,z,'g')
