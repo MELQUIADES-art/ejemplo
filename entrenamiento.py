@@ -9,3 +9,13 @@ y=np.log(np.abs(x))
 z=np.sqrt(np.abs(x)+1)
 plt.plot(x,y,'r')
 plt.plot(x,z,'g')
+import pandas as pd
+m={
+    'x':x,
+    'y':y,
+    'z':z
+}
+dt=pd.DataFrame(m,columns=['x','y','z'])
+dt.describe()
+dt.hist()
+dt.boxplot()
