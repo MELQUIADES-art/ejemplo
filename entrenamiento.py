@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 x=np.linspace(-1,1,1000)
 y=np.log(np.abs(x))
 z=np.sqrt(np.abs(x)+1)
-plt.plot(x,y,'r')
-plt.plot(x,z,'g')
+plt.plot(x,y,'r').show()
+plt.plot(x,z,'g').show()
 import pandas as pd
 m={
     'x':x,
@@ -16,6 +16,6 @@ m={
     'z':z
 }
 dt=pd.DataFrame(m,columns=['x','y','z'])
-dt.describe()
-dt.hist()
-dt.boxplot()
+print(dt.describe())
+print(dt.hist())
+print(dt.boxplot())
