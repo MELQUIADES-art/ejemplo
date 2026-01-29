@@ -1,21 +1,11 @@
-print("Hola, este script se ejecuta en Azure ML 🚀")
-from math import sqrt
-for i in range(3):
-    print(f"Iteración {i}")
+#Capitulo 10
 import numpy as np
-import matplotlib.pyplot as plt
-x=np.linspace(-1,1,1000)
-y=np.log(np.abs(x))
-z=np.sqrt(np.abs(x)+1)
-plt.plot(x,y,'r')
-plt.plot(x,z,'g')
-import pandas as pd
-m={
-    'x':x,
-    'y':y,
-    'z':z
-}
-dt=pd.DataFrame(m,columns=['x','y','z'])
-print(dt.describe())
-print(dt.hist())
-print(dt.boxplot())
+from sklearn.datasets import load_iris
+from sklearn.linear_model import Perceptron
+iris = load_iris(as_frame=True)
+X = iris.data[["petal length (cm)", "petal width (cm)"]].values
+y = (iris.target == 0) # Iris setosa
+per_clf = Perceptron(random_state=42)
+per_clf.fit(X, y)
+X_new = [[2, 0.5], [3, 1]]
+y_pred = per_clf.predict(X_new)
