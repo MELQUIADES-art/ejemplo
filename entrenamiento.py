@@ -13,4 +13,4 @@ per_clf.fit(X, y)
 X_new = [[2, 0.5], [3, 1]]
 y_pred = per_clf.predict(X_new)
 y_pred
-dt[dt["petal length (cm)"]==2]]
+dt[dt["petal length (cm)"]==2]
